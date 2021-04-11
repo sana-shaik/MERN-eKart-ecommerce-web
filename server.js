@@ -16,6 +16,16 @@ app.use(
   })
 );
 
+app.get('/', (req, res) => {
+  res.json({msg: 'Welcome to eKart'});
+})
+
+//Routes
+app.use('/user', require('./routes/userRouter'));
+app.use('/api', require('./routes/categoryRouter'));
+app.use('/api', require('./routes/upload'))
+app.use('/api', require('./routes/productRouter'))
+
 //connect to mongodb
 const URI = process.env.MONGODB_URL;
 mongoose.connect(
@@ -31,15 +41,6 @@ mongoose.connect(
     console.log("Connected to MongoDB");
   }
 );
-
-app.get('/', (req, res) => {
-  res.json({msg: 'Welcome to eKart'});
-})
-
-//Routes
-app.use('/user', require('./routes/userRouter'));
-app.use('/api', require('./routes/categoryRouter'));
-app.use('/api', require('./routes/upload'))
 
 const PORT = process.env.PORT || 5000
 app.listen(PORT, () => {

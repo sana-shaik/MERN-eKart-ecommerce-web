@@ -1,9 +1,48 @@
-# mern-ekart-ecommerce-web
+# eKart eCommerce Shopping Website
+- Its an eCommerce application created with Node.js, Express, React.js and MongoDB
 
-# bcrypt ```For password Encryption```
-# jwtwebtoken ```For Authentication```
-# cloudinary ```For Image Upload```
+## Table of contents
+* [General Info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
 
+## General Info
+This project is a simple ecommerce full stack web application with admin and public roles and additional features loaded to explore maximum features included in the application
 
-[Mongo DB](https://cloud.mongodb.com/v2/60703d5ccaec8b594bce701b#clusters)
-[Cloudinary URL](https://cloudinary.com/console/c-994a3277849928e9767d5faa29a949/welcome)
+## Prerequisites
+Please create accounts in Mongo DB for data storage and Cloudinary for images upload 
+[Mongo DB](https://cloud.mongodb.com/)
+[Cloudinary URL](https://cloudinary.com/)
+## Technologies
+
+Backend:
+
+* bcrypt
+* cloudinary
+* concurrently
+* cookie-parser
+* cors
+* dotenv
+* express
+* express-fileupload
+* jsonwebtoken
+* mongoose
+
+Frontend:
+
+* react-router-dom
+* axios
+* react-paypal-express-checkout
+## Setup
+
+To run this project install below packages using npm or yarn
+
+For Server Side (Backend)
+```
+npm i bcrypt cloudinary concurrently cookie-parser cors dotenv express express-fileupload jsonwebtoken mongoose
+```
+For Client Side (Frontend)
+```
+npx create-react-app client
+npm i react-router-dom axios react-paypal-express-checkout
+```
