@@ -46,3 +46,29 @@ For Client Side (Frontend)
 npx create-react-app client
 npm i react-router-dom axios react-paypal-express-checkout
 ```
+
+## Technical Issues
+
+If you any issues on starting the frontend application in the initial setup
+
+```
+Failed to load plugin 'jsx-a11y' declared in 'package.json » eslint-config-react-app': Cannot find module 'core-js-pure/stable/object/define-property'
+```
+Then add file .eslintrc
+```
+{
+    "parser": "babel-eslint"
+}
+```
+Also add devDependicies in the Package.json
+```
+"devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0"
+  }
+```  
