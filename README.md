@@ -49,7 +49,7 @@ npm i react-router-dom axios react-paypal-express-checkout
 
 ## Technical Issues
 
-If you any issues on starting the frontend application in the initial setup
+If you face any issues on starting the frontend application in the initial setup like below:
 
 ```
 Failed to load plugin 'jsx-a11y' declared in 'package.json » eslint-config-react-app': Cannot find module 'core-js-pure/stable/object/define-property'
